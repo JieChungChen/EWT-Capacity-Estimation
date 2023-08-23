@@ -19,7 +19,7 @@
 EWT是有自適應能力的高階訊號處理方法，可用於分解非線性、不平穩的訊號。EWT的實現步驟大致如下。
 
 1. 透過傅立葉轉換將時域訊號 $v(t)$ 轉成頻譜 $\hat{v}(\omega)$
-2. 傅立葉頻譜將會被分割為$N$個modes
-3. EWT的mode數量$N$會跟傅立葉頻譜中的local maximum數量$K$做比較。若$K>N$，就會從所有local maximum中挑選$N$個做後續的分析；若$K<N$，則需要重新指定$N$到適當的數值
+2. 傅立葉頻譜將會被分割為 $N$ 個modes
+3. EWT的mode數量 $N$ 會跟傅立葉頻譜中的local maximum數量 $K$ 做比較。若 $K>N$ ，就會從所有local maximum中挑選 $N$ 個做後續的分析；若 $K<N$ ，則需要重新指定 $N$ 到適當的數值
 
 ![特徵選擇](https://hackmd.io/_uploads/ByR7Cil6h.png)
