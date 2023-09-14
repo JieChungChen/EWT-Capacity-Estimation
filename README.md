@@ -54,5 +54,6 @@ $$v_{c}(t)=v_{n}(t)-Mode_{f}(t)$$
 ![](https://hackmd.io/_uploads/rylt3Mlkp.png)
 
 
-* 基本模式過濾結果  
+* 基本模式過濾結果
+ 
 ![](https://hackmd.io/_uploads/Hk5jsMlyp.png)
