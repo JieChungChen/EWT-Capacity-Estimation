@@ -32,14 +32,32 @@ EWT是有自適應能力的高階訊號處理方法，可用於分解非線性�
 
 由於EWT會將電壓訊號分解為 $N$ 個mode，因此電壓訊號 $v_{n}(t)$ 可以表示成:  
 
-$$v_{n}(t) = \sum_{i=1}^n Mode_{i}(t)+Mode_{f}(t)+res(t)$$  
+$$v_{n}(t)=\sum_{i=1}^{n} Mode_{i}(t)+Mode_{f}(t)+res(t)$$   
 
 其中 $Mode_{f}(t)$ 代表的是 $n$ 種mode中，跟原始電壓訊號趨勢最接近的基本模式。同時，這也是跟電芯老化與否最不相關的模式，必須透過基本模式過濾的步驟加以去除。首先透過相關係數計算出和原始訊號最高相關性的mode，也就是基本模式 $Mode_{f}(t)$ 。再將 $v_{n}(t)$ 扣除該模式，即可得到過濾後的電壓訊號 $v_{c}(t)$ ，計算過程如下:  
 
-$$v_{c}(t)=v_{n}(t)-Mode_{f}(t)$$
+$$v_{c}(t)=v_{n}(t)-Mode_{f}(t)$$  
 
 ### 特徵篩選  
 
 透過基本模式過濾的電壓訊號 $v_{c}(t)$ 會以下表的方式計算出13項統計特徵  
 
 ![特徵選擇](https://hackmd.io/_uploads/ByR7Cil6h.png)
+
+
+### 自行復現結果
+
+取Stanford Dataset的W8 cell為例:
+
+* 取放電過程其中一小時的電壓做EWT訊號分解  
+
+![](https://hackmd.io/_uploads/rylt3Mlkp.png)
+
+* 基本模式過濾結果
+
+![](https://hackmd.io/_uploads/Hk5jsMlyp.png)
+
+* 特徵隨循環趨勢
+
+![](https://hackmd.io/_uploads/HJWMrExy6.png)
+
