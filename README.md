@@ -53,7 +53,11 @@ $$v_{c}(t)=v_{n}(t)-Mode_{f}(t)$$
 
 ![](https://hackmd.io/_uploads/rylt3Mlkp.png)
 
-
 * 基本模式過濾結果
- 
+
 ![](https://hackmd.io/_uploads/Hk5jsMlyp.png)
+
+* 特徵隨循環趨勢
+
+![](https://hackmd.io/_uploads/HJWMrExy6.png)
+
