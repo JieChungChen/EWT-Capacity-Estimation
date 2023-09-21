@@ -58,7 +58,6 @@ def mat_to_npy(folder='Stanford_Dataset', sep=10):
                 np.save('%s/discharge_info/%s/cycle_%s.npy'%(folder, cell_id, str(i+1).zfill(3)), cycle_info[points])
 
     
-    
 def feature_extraction(v):
     v_abs = np.abs(v)
 
@@ -76,7 +75,7 @@ def feature_extraction(v):
     return [cl_f, cr_f, ip_f, kur, m, v_peak, rms, sh_f, skew, sd]
 
 
-def npy_preprocessing(folder):
+def npy_to_selected_features(folder):
     feature_names = ['Clearance Factor', 'Crest Factor', 'Impulse Factor', 'Kurtosis', 'Mean', 'Peak Value', 'RMS', 'Shape Factor', 'Skewness', 'SD']
     cell_id_list = os.listdir(folder)
     print(cell_id_list)
@@ -163,7 +162,7 @@ def main():
     # mat_to_npy('Stanford_Dataset')
     # v_curve_visualization('Stanford_Dataset/discharge_info', 'W9')
     # ewt_visualization()
-    npy_preprocessing('Stanford_Dataset/discharge_info')
+    npy_to_selected_features('Stanford_Dataset/discharge_info')
 
 
 if __name__ == '__main__':
