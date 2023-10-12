@@ -1,2 +1,4 @@
 *.mat
 *.npy
+*.xlsx
+figs/
